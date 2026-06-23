@@ -1,4 +1,4 @@
-import { Code2, ExternalLink } from "lucide-react";
+import { Code2 } from "lucide-react";
 import { projects } from "@/lib/portfolio-data";
 import { Section } from "./Section";
 
@@ -18,33 +18,23 @@ export function Projects() {
                   {project.name}
                 </h3>
               </div>
-              <div className="flex gap-2">
-                {project.links.github && (
-                  <a
-                    href={project.links.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-lg border border-white/10 p-2 text-slate-400 transition hover:text-cyan-300"
-                    aria-label={`${project.name} GitHub`}
-                  >
-                    <Code2 size={18} />
-                  </a>
-                )}
-                {project.links.demo && (
-                  <a
-                    href={project.links.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-lg border border-white/10 p-2 text-slate-400 transition hover:text-cyan-300"
-                    aria-label={`${project.name} demo`}
-                  >
-                    <ExternalLink size={18} />
-                  </a>
-                )}
-              </div>
+
+              {project.links.github && (
+                <a
+                  href={project.links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg border border-white/10 p-2 text-slate-400 transition hover:text-cyan-300"
+                  aria-label={`${project.name} GitHub`}
+                >
+                  <Code2 size={18} />
+                </a>
+              )}
             </div>
 
-            <p className="mt-4 text-slate-300">{project.description}</p>
+            <p className="mt-4 text-slate-300">
+              {project.description}
+            </p>
 
             <div className="mt-4 flex flex-wrap gap-2">
               {project.stack.map((tech) => (
