@@ -1,19 +1,22 @@
 import { Code2 } from "lucide-react";
 import { projects } from "@/lib/portfolio-data";
 import { Section } from "./Section";
+import { ProjectCarousel } from "./ProjectCarousel";
 
 export function Projects() {
   return (
     <Section id="projects" title="Projects" subtitle="Selected work">
-      <div className="grid gap-6 lg:grid-cols-2">
+      <div className="grid items-stretch gap-6 lg:grid-cols-2">
         {projects.map((project) => (
           <article
             key={project.name}
-            className="glass-card group flex flex-col rounded-3xl p-8 transition hover:border-cyan-400/30"
+            className="glass-card group flex h-full flex-col rounded-3xl p-8 transition hover:border-cyan-400/30"
           >
+            {/* Project Header */}
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm text-cyan-300">{project.year}</p>
+
                 <h3 className="mt-2 text-xl font-semibold text-white">
                   {project.name}
                 </h3>
@@ -24,7 +27,7 @@ export function Projects() {
                   href={project.links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg border border-white/10 p-2 text-slate-400 transition hover:text-cyan-300"
+                  className="rounded-lg border border-white/10 p-2 text-slate-400 transition hover:border-cyan-400/30 hover:text-cyan-300"
                   aria-label={`${project.name} GitHub`}
                 >
                   <Code2 size={18} />
@@ -32,11 +35,22 @@ export function Projects() {
               )}
             </div>
 
+            {/* Project Description */}
             <p className="mt-4 text-slate-300">
               {project.description}
             </p>
 
-            <div className="mt-4 flex flex-wrap gap-2">
+            {/* Project Screenshot Carousel */}
+            {project.screenshots &&
+              project.screenshots.length > 0 && (
+                <ProjectCarousel
+                  screenshots={project.screenshots}
+                  projectName={project.name}
+                />
+              )}
+
+            {/* Technology Stack */}
+            <div className="mt-6 flex flex-wrap gap-2">
               {project.stack.map((tech) => (
                 <span
                   key={tech}
@@ -47,6 +61,7 @@ export function Projects() {
               ))}
             </div>
 
+            {/* Project Highlights */}
             <ul className="mt-5 space-y-2">
               {project.highlights.map((highlight) => (
                 <li

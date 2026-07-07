@@ -89,6 +89,22 @@ export const projects = [
     stack: ["FastAPI", "Python", "Docker", "MySQL", "React"],
     description:
       "Production-style ML microservice for real-time anomaly detection, cyber-attack simulation, and autonomous agent behavior.",
+
+      screenshots: [
+        {
+          src: "/arena1.png",
+          alt: "Arena dashboard",
+        },
+        {
+          src: "/arena2.png",
+          alt: "Arena rag",
+        },
+        {
+          src: "/arena3.png",
+          alt: "Arena rag incident report",
+        },
+      ],
+
     highlights: [
       "Designed a real-time inference engine and auto-retraining pipeline that re-learns every 5 minutes.",
       "Implemented event pipelines for scoring, blocking, logging, and mission-state progression.",
@@ -96,20 +112,40 @@ export const projects = [
       "Developed a React dashboard to track anomaly trends, attack metrics, and retraining cycles.",
       "Containerized services with Docker for consistent multi-environment deployment.",
     ],
-    links: { github: "https://github.com/Nitsaserver/arena-ai" },
+
+    links: {
+      github: "https://github.com/Nitsaserver/arena-ai",
+    },
   },
+
   {
     name: "AI-Powered Personalized Story Generator",
     year: "2025",
     stack: ["React", "Python", "Cloud Run", "Firestore", "Gemini"],
     description:
       "Generative AI platform with feedback-driven agentic behavior and adaptive personalization.",
+
+      screenshots: [
+        {
+          src: "/story1.png",
+          alt: "Story Generator home page",
+        },
+        
+        {
+          src: "/story3.png",
+          alt: "Generated story",
+        },
+      ],
+
     highlights: [
       "Built a generative AI platform with feedback-driven agentic behavior and adaptive personalization.",
       "Developed a secure Python backend deployed on Cloud Run with private access configurations.",
-      "Integrated Firestore for user profiles, preference storage, analytics, and generation history."
+      "Integrated Firestore for user profiles, preference storage, analytics, and generation history.",
     ],
-    links: { github: "https://github.com/Nitsaserver/storyteller" },
+
+    links: {
+      github: "https://github.com/Nitsaserver/storyteller",
+    },
   },
 ];
 

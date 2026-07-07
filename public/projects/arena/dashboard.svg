@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1200" height="56" rx="12" fill="#1e293b" stroke="#334155"/>
+  <text x="64" y="76" fill="#67e8f9" font-family="system-ui,sans-serif" font-size="22" font-weight="600">Arena Dashboard</text>
+  <rect x="40" y="120" width="380" height="220" rx="16" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.3"/>
+  <rect x="450" y="120" width="380" height="220" rx="16" fill="#0f172a" stroke="#334155"/>
+  <rect x="860" y="120" width="380" height="220" rx="16" fill="#0f172a" stroke="#334155"/>
+  <rect x="40" y="370" width="1200" height="310" rx="16" fill="#0f172a" stroke="#334155"/>
+  <polyline points="80,610 220,520 360,560 520,430 680,470 840,360 1000,390 1160,300" fill="none" stroke="#22d3ee" stroke-width="4"/>
+</svg>

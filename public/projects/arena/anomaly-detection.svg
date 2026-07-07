@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1200" height="56" rx="12" fill="#1e293b" stroke="#334155"/>
+  <text x="64" y="76" fill="#67e8f9" font-family="system-ui,sans-serif" font-size="22" font-weight="600">Anomaly Detection View</text>
+  <rect x="40" y="120" width="760" height="560" rx="16" fill="#0f172a" stroke="#334155"/>
+  <rect x="820" y="120" width="420" height="170" rx="16" fill="#0f172a" stroke="#334155"/>
+  <rect x="820" y="310" width="420" height="170" rx="16" fill="#0f172a" stroke="#334155"/>
+  <rect x="820" y="500" width="420" height="180" rx="16" fill="#0f172a" stroke="#334155"/>
+  <circle cx="420" cy="400" r="120" fill="none" stroke="#22d3ee" stroke-width="3" stroke-dasharray="8 10"/>
+  <circle cx="420" cy="400" r="8" fill="#f87171"/>
+  <text x="450" y="408" fill="#fca5a5" font-family="system-ui,sans-serif" font-size="18">Anomaly detected</text>
+</svg>
